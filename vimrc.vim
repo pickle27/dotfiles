@@ -14,8 +14,6 @@ Plug 'sheerun/vim-polyglot'
 Plug 'rakr/vim-one'
 Plug 'wincent/terminus'
 Plug 'airblade/vim-gitgutter'
-Plug 'preservim/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'vim-ruby/vim-ruby'
@@ -59,9 +57,11 @@ set hlsearch
 " switch between the last 2 files https://www.destroyallsoftware.com/file-navigation-in-vim.html
 nnoremap <leader><leader> <c-^>
 
-" rspec config
+" side-drawer
+source ~/dotfiles/vim/side-drawer.vim
+
+" rspec
 source ~/dotfiles/vim/rspec.vim
 
-" Plugin Conf
-source ~/dotfiles/vim/plugin-conf/nerdtree.vim
-source ~/dotfiles/vim/plugin-conf/fzf.vim
+" fzf
+source ~/dotfiles/vim/fzf.vim
